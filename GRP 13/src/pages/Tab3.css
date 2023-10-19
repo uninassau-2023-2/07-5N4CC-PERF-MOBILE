@@ -1,0 +1,14 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-content {
+  margin-top: 1rem;
+}
+
+.avatar {
+  margin-bottom: 0.5rem;
+}
