@@ -1,6 +1,5 @@
-# 07-5N4CC-PERF-MOBILE
-
 # Alunos
+
 * Arthur José Silva de Oliveira - 01523856
 * Heitor de Souza Gomes - 01536478
 * Lucas Fernandes de Almeida Silva - 01503852
