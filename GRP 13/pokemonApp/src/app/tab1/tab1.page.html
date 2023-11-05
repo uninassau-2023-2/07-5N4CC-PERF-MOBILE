@@ -26,12 +26,23 @@
 
     <ion-card-content>
       <ion-list>
-        {{adress.place}}, {{adress.neighborhood}} - {{adress.locality}}-{{adress.uf}}
+        <ng-container *ngIf="adress.place">
+          {{ adress.place }},
+        </ng-container>
+        <ng-container *ngIf="adress.neighborhood">
+          {{ adress.neighborhood }} -
+        </ng-container>
+        <ng-container *ngIf="adress.locality">
+          {{ adress.locality }}
+        </ng-container>
+        <ng-container *ngIf="adress.uf">
+          - {{ adress.uf }}
+        </ng-container>
       </ion-list>
+
     </ion-card-content>
   </ion-card>
 
-  // https://github.com/uninassau-2023-2/07-5N4CC-PERF-MOBILE
 
   <ion-card>
     <ion-card-header>
