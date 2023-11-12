@@ -13,5 +13,41 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{pokemonTab2.name | uppercase}}
+      </ion-card-title>
+      <ion-card-title [ngStyle]="{'color': label.color}">
+        {{label.name}}
+      </ion-card-title>
+      <ion-img alt="Imagem do pokemon" src={{pokemonTab2.image}}></ion-img>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            Abilities: {{pokemonTab2.abilities.length}}
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            Height: {{pokemonTab2.height}}
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            Width: {{pokemonTab2.width}}
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addNewToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

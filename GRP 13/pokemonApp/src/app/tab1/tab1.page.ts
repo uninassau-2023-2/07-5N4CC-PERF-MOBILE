@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { ViaCepServiceService } from '../services/ViaCepService/via-cep-service.service'
 import { PokeAPIServiceService } from '../services/PokeAPIService/poke-apiservice.service'
+import { SalvarDadosService } from '../services/SalvarDadosService/salvar-dados.service'
 
 @Component({
   selector: 'app-tab1',
@@ -9,7 +10,7 @@ import { PokeAPIServiceService } from '../services/PokeAPIService/poke-apiservic
 })
 export class Tab1Page {
 
-  constructor(private viaCepService: ViaCepServiceService, private pokeApiService: PokeAPIServiceService) { }
+  constructor(private viaCepService: ViaCepServiceService, private pokeApiService: PokeAPIServiceService, private salvarDados: SalvarDadosService) { }
 
   ngOnInit() {
     this.buscarPokemon()
@@ -48,6 +49,9 @@ export class Tab1Page {
       this.pokemon.height = formatValue.height
       this.pokemon.name = formatValue.name
       this.pokemon.image = formatValue.sprites.front_default
+
+      this.salvarDados.setDado(this.pokemon, 'pokemonTab1')
     })
+
   }
 }
