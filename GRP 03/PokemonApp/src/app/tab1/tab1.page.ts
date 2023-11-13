@@ -43,7 +43,7 @@ export class Tab1Page {
     this.pokeAPIService.getPokeAPIService(pokemonId)
     .subscribe((pokemonData: any) => {
       this.pokemon.name = pokemonData.name.toUpperCase();
-      this.pokemon.abilities = pokemonData.abilities.map((ability: any) => ability.ability.name);
+      this.pokemon.abilities = [pokemonData.abilities.length];
       this.pokemon.height = pokemonData.height;
       this.pokemon.weight = pokemonData.weight;
       this.pokemon.imageUrl = pokemonData.sprites.other.dream_world.front_default;
