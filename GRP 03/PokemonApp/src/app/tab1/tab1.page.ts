@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PokeAPIService } from '../services/poke-api.service';
 import { ViaCEPService } from '../services/via-cep.service';
-
+import { SharedAbilitiesService } from '../services/shared-abilities.service';
 
 @Component({
   selector: 'app-tab1',
@@ -22,13 +22,22 @@ export class Tab1Page {
     abilities: [],
     height: 0,
     weight: 0,
-    imageUrl: ''
+    imageUrl: '',
   };
-  
+
+  numberOfAbilitiesTab1: any;
+
   constructor(
     private pokeAPIService: PokeAPIService,
-    private viaCEPService: ViaCEPService
+    private viaCEPService: ViaCEPService,
+    private sharedAbilitiesService: SharedAbilitiesService
   ) {}
+
+  ngOnInit(): void {
+    this.numberOfAbilitiesTab1 = 2;
+    this.sharedAbilitiesService.setNumberOfAbilitiesTab1(this.numberOfAbilitiesTab1);
+  }
+
   buscarPokemon() {
     this.viaCEPService.getViaCEPService(this.areaBuscarPokemon)
     .subscribe((value) => {
@@ -37,6 +46,7 @@ export class Tab1Page {
       this.areaBusca.localidade = ' - ' + JSON.parse(JSON.stringify(value)) ['localidade'];
       this.areaBusca.uf = '-' + JSON.parse(JSON.stringify(value)) ['uf'];
     });
+
 
     const pokemonId = Math.floor(Math.random() * 100) + 1;
 
@@ -47,8 +57,6 @@ export class Tab1Page {
       this.pokemon.height = pokemonData.height;
       this.pokemon.weight = pokemonData.weight;
       this.pokemon.imageUrl = pokemonData.sprites.other.dream_world.front_default;
-    });
-    
+      });
   };
-
 }
