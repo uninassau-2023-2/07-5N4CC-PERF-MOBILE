@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '../services/photo.service';
 import { PokeAPIService } from '../services/poke-api.service';
-import { HttpClient } from '@angular/common/http';
 import { SharedAbilitiesService } from '../services/shared-abilities.service';
 
 @Component({
@@ -27,7 +26,6 @@ export class Tab2Page implements OnInit{
   constructor(
     public photoService: PhotoService,
     private pokeAPIService: PokeAPIService,
-    private http: HttpClient,
     private sharedAbilitiesService: SharedAbilitiesService
   ) {}
    
@@ -43,8 +41,8 @@ export class Tab2Page implements OnInit{
   };
 
   loadRandomPokemon2() {
-    const apiUrl = 'https://pokeapi.co/api/v2/pokemon/${randomPokemonID}/'
-    this.http.get(apiUrl).subscribe((data: any) => {
+    this.pokeAPIService.getPokeAPIService()
+    .subscribe((data: any) => {
       this.loadRandomPokemon2 = data;
       this.numberOfAbilitiesTab2 = data.abilities.length;
       this.compareAbilities();
