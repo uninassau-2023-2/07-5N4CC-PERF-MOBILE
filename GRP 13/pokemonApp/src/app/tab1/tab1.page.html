@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Buscar Pokemon
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Buscar Pokemon</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-input [(ngModel)]="cep" [counter]="true" fill="solid" helperText="Área para buscar Pokemon"
+        label-placement="floating" label="CEP" maxlength="8" placeholder="5246354" type="text">
+
+      </ion-input>
+      <ion-button expand="block" fill="solid" (click)="buscarPokemon()">
+        Buscar
+      </ion-button>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ng-container *ngIf="adress.place">
+          {{ adress.place }},
+        </ng-container>
+        <ng-container *ngIf="adress.neighborhood">
+          {{ adress.neighborhood }} -
+        </ng-container>
+        <ng-container *ngIf="adress.locality">
+          {{ adress.locality }}
+        </ng-container>
+        <ng-container *ngIf="adress.uf">
+          - {{ adress.uf }}
+        </ng-container>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{pokemon.name | uppercase}}
+      </ion-card-title>
+      <ion-img alt="Imagem do pokemon" src={{pokemon.image}}></ion-img>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            Abilities: {{pokemon.abilities.length}}
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            Height: {{pokemon.height}}
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            Width: {{pokemon.width}}
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,351 @@
+{
+  "pokemons": [
+    {
+      "abilities": [
+        "shed-skin"
+      ],
+      "height": 6,
+      "width": 100,
+      "name": "kakuna",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 6
+    },
+    {
+      "abilities": [
+        "poison-point",
+        "rivalry",
+        "sheer-force"
+      ],
+      "height": 13,
+      "width": 600,
+      "name": "nidoqueen",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 7
+    },
+    {
+      "abilities": [
+        "keen-eye",
+        "sniper"
+      ],
+      "height": 12,
+      "width": 380,
+      "name": "fearow",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 8
+    },
+    {
+      "abilities": [
+        "intimidate",
+        "flash-fire",
+        "justified"
+      ],
+      "height": 19,
+      "width": 1550,
+      "name": "arcanine",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 9
+    },
+    {
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "height": 17,
+      "width": 905,
+      "name": "charizard",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 10
+    },
+    {
+      "abilities": [
+        "poison-point",
+        "rivalry",
+        "hustle"
+      ],
+      "height": 4,
+      "width": 70,
+      "name": "nidoran-f",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 11
+    },
+    {
+      "abilities": [
+        "shield-dust",
+        "run-away"
+      ],
+      "height": 3,
+      "width": 29,
+      "name": "caterpie",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 12
+    },
+    {
+      "abilities": [
+        "overgrow",
+        "chlorophyll"
+      ],
+      "height": 20,
+      "width": 1000,
+      "name": "venusaur",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 13
+    },
+    {
+      "abilities": [
+        "run-away",
+        "guts",
+        "hustle"
+      ],
+      "height": 7,
+      "width": 185,
+      "name": "raticate",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 14
+    },
+    {
+      "abilities": [
+        "chlorophyll",
+        "gluttony"
+      ],
+      "height": 17,
+      "width": 155,
+      "name": "victreebel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 15
+    },
+    {
+      "abilities": [
+        "rock-head",
+        "sturdy",
+        "sand-veil"
+      ],
+      "height": 4,
+      "width": 200,
+      "name": "geodude",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 16
+    },
+    {
+      "abilities": [
+        "guts",
+        "no-guard",
+        "steadfast"
+      ],
+      "height": 8,
+      "width": 195,
+      "name": "machop",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 17
+    },
+    {
+      "abilities": [
+        "oblivious",
+        "own-tempo",
+        "regenerator"
+      ],
+      "height": 12,
+      "width": 360,
+      "name": "slowpoke",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 1,
+        "victories": 0
+      },
+      "id": 18
+    },
+    {
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "height": 3,
+      "width": 40,
+      "name": "shellder",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 2,
+        "victories": 0
+      },
+      "id": 19
+    },
+    {
+      "abilities": [
+        "flash-fire",
+        "drought"
+      ],
+      "height": 11,
+      "width": 199,
+      "name": "ninetales",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+      "statistics": {
+        "defeats": 1,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 20
+    },
+    {
+      "abilities": [
+        "hyper-cutter",
+        "shell-armor",
+        "sheer-force"
+      ],
+      "height": 4,
+      "width": 65,
+      "name": "krabby",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 21
+    },
+    {
+      "abilities": [
+        "synchronize",
+        "inner-focus",
+        "magic-guard"
+      ],
+      "height": 13,
+      "width": 565,
+      "name": "kadabra",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 22
+    },
+    {
+      "abilities": [
+        "insomnia",
+        "forewarn",
+        "inner-focus"
+      ],
+      "height": 10,
+      "width": 324,
+      "name": "drowzee",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 23
+    },
+    {
+      "abilities": [
+        "inner-focus",
+        "infiltrator"
+      ],
+      "height": 8,
+      "width": 75,
+      "name": "zubat",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 24
+    },
+    {
+      "abilities": [
+        "intimidate",
+        "shed-skin",
+        "unnerve"
+      ],
+      "height": 20,
+      "width": 69,
+      "name": "ekans",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 1,
+        "victories": 2
+      },
+      "id": 25
+    },
+    {
+      "abilities": [
+        "swarm",
+        "sniper"
+      ],
+      "height": 10,
+      "width": 295,
+      "name": "beedrill",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+      "statistics": {
+        "defeats": 0,
+        "draws": 0,
+        "victories": 0
+      },
+      "id": 26
+    }
+  ]
+}
